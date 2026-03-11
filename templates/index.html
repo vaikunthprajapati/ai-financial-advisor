@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>AI Financial Advisor</title>
+
+<link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+<h1>AI Financial Advisor</h1>
+
+<input id="question" placeholder="Ask financial question">
+
+<button onclick="askAI()">Ask</button>
+
+<p id="response"></p>
+
+<script>
+
+async function askAI(){
+
+let question=document.getElementById("question").value
+
+let res=await fetch("/ask",{
+method:"POST",
+headers:{
+"Content-Type":"application/json"
+},
+body:JSON.stringify({question:question})
+})
+
+let data=await res.json()
+
+document.getElementById("response").innerText=data.answer
+
+}
+
+</script>
+
+</body>
+
+</html>
