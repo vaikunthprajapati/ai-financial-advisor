@@ -124,5 +124,5 @@ ai-financial-advisor/
 ## 👨‍💻 Author
 
 **Vaikunth Prajapati**
-
+LinkedIn: www.linkedin.com/in/vaikunthprajapati
 GitHub: https://github.com/vaikunthprajapati
