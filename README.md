@@ -1,159 +1,101 @@
 <img src="banner.png" width="100%">
 
-# 💰 AI Financial Advisor Pro
+# 💰 AI Financial Advisor
 
-AI-powered financial planning platform featuring financial health scoring, risk profiling, goal planning, AI-generated recommendations, savings forecasting, interactive analytics, and PDF report generation.
+An intelligent financial planning system powered by Google Gemini 2.0 Flash.
 
----
+## Features
+- Personalized advice for Students, Professionals & Retirees
+- Expense breakdown with visual charts
+- Goal tracking and timeline estimation
+- Interactive AI chat for financial questions
 
-## 🚀 Features
+## Tech Stack
+- Python, Streamlit, Google Gemini 2.0 Flash, Plotly, Pandas
 
-### 📊 Financial Dashboard
-- Financial Health Score (0–100)
-- Financial Grade (A–D)
-- Risk Profile Analysis
-- Expense Ratio Analysis
-- Emergency Fund Tracking
-- Debt-to-Income Ratio Calculation
-
-### 🎯 Goal Planning
-- Goal Progress Tracking
-- Months-to-Goal Estimation
-- Savings Recommendations
-- Budget Analysis
-
-### 📈 Interactive Visualizations
-- Expense Breakdown Charts
-- Income vs Expenses vs Savings
-- Financial Insights Dashboard
-- Savings Forecasting
-
-### 🤖 AI Financial Coach
-- Personalized Financial Advice
-- Investment Suggestions
-- Goal Achievement Strategies
-- Risk Awareness Guidance
-- AI Financial Q&A Assistant
-
-### 📄 Financial Reports
-- Downloadable PDF Reports
-- Personalized Financial Summary
-- Key Financial Metrics
-
----
-
-## 🛠 Tech Stack
-
-### Frontend
-- Streamlit
-
-### Backend
-- Python
-
-### AI
-- OpenRouter
-- DeepSeek Chat V3
-
-### Data & Visualization
-- Pandas
-- Plotly
-
-### Reports
-- ReportLab
-
-### Environment Management
-- Python Dotenv
-
----
-
-## 📷 Screenshots
-
-### Dashboard Overview
-
-![Dashboard](screenshots/dashboard-overview.png)
-
-### AI Financial Coach
-
-![AI Coach](screenshots/ai-advisor.png)
-
-### Goal Planner
-
-![Goal Planner](screenshots/goal-planner.png)
-
----
-
-## ⚙️ Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/vaikunthprajapati/ai-financial-advisor.git
-cd ai-financial-advisor
+## How to Run
+1. Clone this repo
+2. Install dependencies: `pip install -r requirements.txt`
+3. Add your Gemini API key to `.env` file
+4. Run: `streamlit run app.py`
 ```
+3. Save it
 
-Install dependencies:
+---
 
-```bash
-pip install -r requirements.txt
+## 🧪 PHASE 5: Test Your App
+
+---
+
+### Step 15 — Run the App
+In the VS Code terminal (make sure `(venv)` is showing), type:
 ```
-
-Create a `.env` file:
-
-```env
-OPENROUTER_API_KEY=your_api_key_here
-```
-
-Run the application:
-
-```bash
 streamlit run app.py
 ```
+Your browser will automatically open with the app running at `http://localhost:8501`
 
 ---
 
-## 📁 Project Structure
+### Step 16 — Test Everything
+Go through this checklist:
 
-```text
-ai-financial-advisor/
-│
-├── app.py
-├── requirements.txt
-├── .env.example
-├── README.md
-├── screenshots/
-└── .gitignore
+| Test | What to do |
+|---|---|
+| ✅ Fill in your profile | Enter name, income, expenses in the sidebar |
+| ✅ Check the dashboard | See your metrics and pie chart update |
+| ✅ Click "Get My Personalized Advice" | AI should respond with advice |
+| ✅ Set a goal amount | Check the progress bar |
+| ✅ Ask a question in the chat | AI should answer |
+
+If everything works — **your app is ready!** 🎉
+
+---
+
+## 📤 PHASE 6: Upload to GitHub
+
+---
+
+### Step 17 — Create a .gitignore File
+1. Create a new file called `.gitignore`
+2. Paste this inside:
 ```
+venv/
+.env
+__pycache__/
+*.pyc
+```
+3. Save it — this prevents your secret API key from being uploaded
 
 ---
 
-## 🎯 Resume Description
-
-Built an AI-powered financial planning dashboard using Python, Streamlit, OpenRouter, DeepSeek, Plotly, and ReportLab.
-
-Implemented:
-- Financial Health Scoring
-- Risk Profiling
-- Goal Planning
-- Savings Forecasting
-- AI-Powered Recommendations
-- PDF Report Generation
-- Interactive Financial Visualizations
+### Step 18 — Create GitHub Repository
+1. Go to **https://github.com** and log in
+2. Click the **+** icon (top right) → **New Repository**
+3. Name it: `ai-financial-advisor`
+4. Set it to **Public**
+5. Do NOT check any checkboxes
+6. Click **Create Repository**
+7. **Copy the repository URL** shown on the page (looks like `https://github.com/yourusername/ai-financial-advisor.git`)
 
 ---
 
-## 🔮 Future Improvements
-
-- Portfolio Analysis
-- Investment Allocation Engine
-- Expense Categorization AI
-- Retirement Planning Module
-- Multi-user Authentication
-- Cloud Database Integration
-
----
-
-## 👨‍💻 Author
-
-**Vaikunth Prajapati**
-
-GitHub: https://github.com/vaikunthprajapati
+### Step 19 — Upload Your Code to GitHub
+In your VS Code terminal, run these commands **one by one**:
+```
+git init
+```
+```
+git add .
+```
+```
+git commit -m "Initial commit - AI Financial Advisor"
+```
+```
+git branch -M main
+```
+```
+git remote add origin https://github.com/YOUR_USERNAME/ai-financial-advisor.git
+```
+*(Replace YOUR_USERNAME with your actual GitHub username)*
+```
+git push -u origin main
